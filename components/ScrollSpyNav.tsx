@@ -86,7 +86,7 @@ export default function ScrollSpyNav() {
                   el.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               title={it.label}
-              className={`w-10 h-10 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all ${
+              className={`w-16 h-16 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all ${
                 isActive
                   ? "bg-amber-500 text-white scale-110"
                   : "bg-transparent text-slate-200 hover:bg-white/10"
