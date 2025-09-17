@@ -11,11 +11,31 @@ import {
 } from "react-icons/fi";
 
 const items = [
-  { id: "hero", icon: <FiHome />, label: "Home" },
-  { id: "experiences", icon: <FiStar />, label: "Experiences" },
-  { id: "packages", icon: <FiPackage />, label: "Packages" },
-  { id: "testimonials", icon: <FiClock />, label: "Testimonials" },
-  { id: "contact", icon: <FiPhone />, label: "Contact" },
+  {
+    id: "hero",
+    icon: <FiHome className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Home",
+  },
+  {
+    id: "experiences",
+    icon: <FiStar className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Experiences",
+  },
+  {
+    id: "packages",
+    icon: <FiPackage className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Packages",
+  },
+  {
+    id: "testimonials",
+    icon: <FiClock className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Testimonials",
+  },
+  {
+    id: "contact",
+    icon: <FiPhone className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Contact",
+  },
 ];
 
 export default function ScrollSpyNav() {
@@ -47,9 +67,14 @@ export default function ScrollSpyNav() {
   return (
     <nav
       aria-label="Scrollspy"
-      className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50"
+      className="fixed z-50 left-1/2 -translate-x-1/2 sm:left-6 sm:-translate-x-0
+        bottom-0 md:top-1/2 transform -translate-y-1/2
+        sm:transform md:-translate-y-1/2
+        w-96 md:w-full sm:w-auto
+        px-2 sm:px-0"
+      style={{ maxWidth: "100vw" }}
     >
-      <div className="w-14 bg-white/8 backdrop-blur-md rounded-3xl p-2 flex flex-col items-center space-y-3 shadow-lg border-[1px] border-white/20">
+      <div className="md:w-14 bg-white/8 backdrop-blur-md rounded-3xl p-2 flex md:flex-col items-center space-y-0 sm:space-y-3 space-x-3 sm:space-x-0 shadow-lg border-[1px] border-white/20 justify-center">
         {items.map((it) => {
           const isActive = active === it.id;
           return (
@@ -61,7 +86,7 @@ export default function ScrollSpyNav() {
                   el.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               title={it.label}
-              className={`w-10 h-10 rounded-full flex items-center justify-center text-white transition-all ${
+              className={`w-10 h-10 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all ${
                 isActive
                   ? "bg-amber-500 text-white scale-110"
                   : "bg-transparent text-slate-200 hover:bg-white/10"
