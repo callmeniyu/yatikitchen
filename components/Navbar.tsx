@@ -34,6 +34,8 @@ export default function Navbar() {
     { name: "Home", id: "hero" },
     { name: "Experiences", id: "experiences" },
     { name: "Packages", id: "packages" },
+    { name: "Local Flavors", id: "local-flavors" },
+    { name: "Gallery", id: "gallery" },
     { name: "Testimonials", id: "testimonials" },
     { name: "Contact", id: "contact" },
   ];
@@ -54,7 +56,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center"
             >
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-500">
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#a7dda1] to-[#a7dda1]">
                 Yati Kitchen
               </span>
             </motion.div>
@@ -67,7 +69,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-slate-200 hover:text-amber-400 transition-colors duration-300 font-medium"
+                  className="text-slate-200 hover:text-[#a7dda1] transition-colors duration-300 font-medium"
                 >
                   {item.name}
                 </motion.button>
@@ -98,7 +100,7 @@ export default function Navbar() {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className="block w-full text-left py-3 text-slate-200 hover:text-amber-400 transition-colors border-b border-slate-800"
+                    className="block w-full text-left py-3 text-slate-200 hover:text-[#a7dda1] transition-colors border-b border-slate-800"
                   >
                     {item.name}
                   </button>
@@ -116,7 +118,7 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-40 p-3 bg-amber-500 hover:bg-amber-600 text-white rounded-full shadow-lg transition-all duration-300"
+            className="fixed bottom-6 right-6 z-40 p-3 bg-[#a7dda1] hover:bg-[#8bc786] text-white rounded-full shadow-lg transition-all duration-300"
           >
             <FiArrowUp size={20} />
           </motion.button>

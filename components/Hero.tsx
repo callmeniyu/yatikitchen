@@ -19,8 +19,8 @@ export default function Hero() {
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-[#a7dda1]/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-[#a7dda1]/5 rounded-full blur-3xl animate-pulse-slower"></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,7 +32,7 @@ export default function Hero() {
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             <span className="text-slate-100">Experience </span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-500">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#a7dda1] to-[#a7dda1]">
               Cameron Highlands
             </span>
           </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollToSection("packages")}
-              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-medium py-4 px-8 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40"
+              className="bg-gradient-to-r from-[#a7dda1] to-[#a7dda1] hover:from-[#8bc786] hover:to-[#8bc786] text-white font-medium py-4 px-8 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-[#a7dda1]/20 hover:shadow-[#a7dda1]/40"
             >
               Explore Packages
             </button>
@@ -74,8 +74,8 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-10 mb-16"
           >
             <div className="flex items-center">
-              <div className="bg-amber-500/20 backdrop-blur-sm rounded-full p-3 mr-4">
-                <FiUsers className="text-2xl text-amber-400" />
+              <div className="bg-[#a7dda1]/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                <FiUsers className="text-2xl text-[#a7dda1]" />
               </div>
               <div className="text-left">
                 <p className="text-2xl font-bold text-white">50,000+</p>
@@ -84,8 +84,8 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center">
-              <div className="bg-amber-500/20 backdrop-blur-sm rounded-full p-3 mr-4">
-                <FiStar className="text-2xl text-amber-400" />
+              <div className="bg-[#a7dda1]/20 backdrop-blur-sm rounded-full p-3 mr-4">
+                <FiStar className="text-2xl text-[#a7dda1]" />
               </div>
               <div className="text-left">
                 <p className="text-2xl font-bold text-white">4.9/5</p>
@@ -102,7 +102,7 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollToSection("experiences")}
-              className="animate-bounce p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-slate-300 hover:text-amber-400 transition-colors"
+              className="animate-bounce p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-slate-300 hover:text-[#a7dda1] transition-colors"
             >
               <FiArrowDown size={24} />
             </button>

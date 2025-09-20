@@ -10,30 +10,24 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      origin: "United Kingdom",
-      text: "The food at Yati Kitchen was absolutely incredible! Authentic Malaysian flavors and such a warm, welcoming atmosphere.",
+      name: "Siauhui",
+      origin: "United States",
+      text: "Almost everything, the house is clean and the location is superb. The host is super helpful and friendly, we really enjoyed during our stay",
       rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
       delay: 0.1,
     },
     {
-      name: "Michael Chen",
-      origin: "Singapore",
-      text: "The tour package was excellent value. Our guide was knowledgeable and showed us parts of Cameron Highlands we would never have found on our own.",
+      name: "Imran",
+      origin: "Pakistan",
+      text: "The location was perfect, the flat was clean and comfy. The host was very friendly and also helpful he already prepared everything ready for us before we arrived",
       rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
       delay: 0.2,
     },
     {
       name: "Aisha Rahman",
       origin: "Malaysia",
-      text: "Staying at Yati Home felt like visiting family. The room was cozy, clean, and had a beautiful view of the hills. Will definitely return!",
+      text: "Excellent view of Tanah Rata and beyond from the balcony. Location is right in the heart of Tanah Rata, opposite Maybank",
       rating: 5,
-      image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
       delay: 0.3,
     },
   ];
@@ -63,14 +57,9 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: testimonial.delay }}
-              className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-amber-500/30 transition-all duration-500"
+              className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-[#a7dda1]/30 transition-all duration-500"
             >
               <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
                 <div>
                   <h4 className="font-semibold text-white">
                     {testimonial.name}
@@ -85,7 +74,7 @@ export default function Testimonials() {
                     key={i}
                     className={`${
                       i < testimonial.rating
-                        ? "text-amber-400 fill-amber-400"
+                        ? "text-[#a7dda1] fill-[#a7dda1]"
                         : "text-slate-600"
                     }`}
                   />

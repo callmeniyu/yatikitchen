@@ -8,6 +8,7 @@ import {
   FiImage,
   FiStar,
   FiPhone,
+  FiCoffee,
 } from "react-icons/fi";
 
 const items = [
@@ -25,6 +26,16 @@ const items = [
     id: "packages",
     icon: <FiPackage className="w-5 h-5 md:w-auto md:h-auto" />,
     label: "Packages",
+  },
+  {
+    id: "local-flavors",
+    icon: <FiCoffee className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Local Flavors",
+  },
+  {
+    id: "gallery",
+    icon: <FiImage className="w-5 h-5 md:w-auto md:h-auto" />,
+    label: "Gallery",
   },
   {
     id: "testimonials",
@@ -74,7 +85,7 @@ export default function ScrollSpyNav() {
         px-2 sm:px-0"
       style={{ maxWidth: "100vw" }}
     >
-      <div className="md:w-14 bg-white/8 backdrop-blur-md rounded-3xl p-2 flex md:flex-col items-center space-y-0 sm:space-y-3 space-x-3 sm:space-x-0 shadow-lg border-[1px] border-white/20 justify-center">
+      <div className="md:w-14 bg-white/8 backdrop-blur-md rounded-3xl py-3 md:py-2 p-2 flex md:flex-col items-center space-y-0 sm:space-y-3 space-x-3 sm:space-x-0 shadow-lg border-[1px] border-white/20 justify-center">
         {items.map((it) => {
           const isActive = active === it.id;
           return (
@@ -86,9 +97,9 @@ export default function ScrollSpyNav() {
                   el.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               title={it.label}
-              className={`w-16 h-16 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all ${
+              className={`w-16 h-10 md:w-10 md:h-10 rounded-full flex items-center justify-center text-white transition-all ${
                 isActive
-                  ? "bg-amber-500 text-white scale-110"
+                  ? "bg-[#a7dda1] text-white scale-110"
                   : "bg-transparent text-slate-200 hover:bg-white/10"
               }`}
             >

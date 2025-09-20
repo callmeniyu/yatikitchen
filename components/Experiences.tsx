@@ -24,17 +24,10 @@ export default function Experiences() {
       delay: 0.2,
     },
     {
-      icon: <FiMap className="text-3xl" />,
-      title: "Guided Adventures",
-      description:
-        "Discover hidden gems and popular attractions with our knowledgeable local guides.",
-      delay: 0.3,
-    },
-    {
       icon: <FiPackage className="text-3xl" />,
       title: "Curated Packages",
       description:
-        "Enjoy seamless experiences that combine meals, accommodation, and tours at great value.",
+        "Enjoy seamless experiences that combine meals & accommodation at great value.",
       delay: 0.4,
     },
   ];
@@ -57,16 +50,16 @@ export default function Experiences() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: exp.delay }}
-              className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-amber-500/30 transition-all duration-500 hover:-translate-y-2"
+              className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-6 border border-slate-700 hover:border-[#a7dda1]/30 transition-all duration-500 hover:-translate-y-2"
             >
-              <div className="w-14 h-14 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 mb-4">
+              <div className="w-14 h-14 bg-[#a7dda1]/10 rounded-xl flex items-center justify-center text-[#a7dda1] mb-4">
                 {exp.icon}
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">

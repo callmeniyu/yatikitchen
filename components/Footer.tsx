@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-500 mb-4">
+            <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#a7dda1] to-[#a7dda1] mb-4">
               Yati Kitchen
             </h3>
             <p className="text-slate-400 mb-4">
@@ -27,19 +27,19 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-slate-400 hover:text-amber-400 transition-colors"
+                className="text-slate-400 hover:text-[#a7dda1] transition-colors"
               >
                 <FiFacebook size={20} />
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-amber-400 transition-colors"
+                className="text-slate-400 hover:text-[#a7dda1] transition-colors"
               >
                 <FiInstagram size={20} />
               </a>
               <a
                 href="#"
-                className="text-slate-400 hover:text-amber-400 transition-colors"
+                className="text-slate-400 hover:text-[#a7dda1] transition-colors"
               >
                 <FiTwitter size={20} />
               </a>
@@ -100,7 +100,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <FiMapPin className="mt-1 mr-3 text-amber-400" />
+                <FiMapPin className="mt-1 mr-3 text-[#a7dda1]" />
                 <span className="text-slate-400">
                   C-1-19, Cameron Fair, Jalan Camelia,
                   <br />
@@ -110,11 +110,11 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center">
-                <FiPhone className="mr-3 text-amber-400" />
-                <span className="text-slate-400">+60 XXX-XXXXXXX</span>
+                <FiPhone className="mr-3 text-[#a7dda1]" />
+                <span className="text-slate-400">+60 194386015</span>
               </li>
               <li className="flex items-center">
-                <FiMail className="mr-3 text-amber-400" />
+                <FiMail className="mr-3 text-[#a7dda1]" />
                 <span className="text-slate-400">info@yatikitchen.com</span>
               </li>
             </ul>
@@ -124,10 +124,10 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">
               Business Info
             </h4>
-            <p className="text-slate-400 mb-2">Yati Kitchen</p>
+            <p className="text-slate-400 mb-2">THE YATI KITCHEN</p>
             <p className="text-slate-400 mb-2">202303143855 (LA0058339-D)</p>
             <p className="text-slate-400">
-              Licensed tour operator and accommodation provider
+              Licensed accommodation operator and provider
             </p>
           </div>
         </div>
