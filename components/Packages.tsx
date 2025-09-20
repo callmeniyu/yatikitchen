@@ -3,10 +3,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { FiCheck, FiMapPin, FiCoffee, FiHome } from "react-icons/fi";
-import { useRouter } from "next/navigation";
 
 export default function Packages() {
-  const router = useRouter();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -44,12 +42,6 @@ export default function Packages() {
 
   const checkIn = "2:00 PM";
   const checkOut = "12:00 PM";
-
-  const handleClick = () => {
-    router.push(
-      "https://www.booking.com/hotel/my/blue-jade-studios.html?aid=898224&app_hotel_id=9315452&checkin=2025-10-08&checkout=2025-10-09&from_sn=ios&group_adults=2&group_children=0&label=hotel_details-es9Iio%401758098027&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA%2C&chal_t=1758365057295&force_referer=&activeTab=photosGallery"
-    );
-  };
 
   return (
     <section id="packages" ref={ref} className="py-20 lg:py-28 relative">
@@ -139,10 +131,7 @@ export default function Packages() {
                   </div>
                 </div>
 
-                <button
-                  onClick={handleClick}
-                  className="cursor-pointer mt-auto w-full bg-[#a7dda1] hover:bg-[#8bc786] text-slate-900 font-medium py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg shadow-[#a7dda1]/20 hover:shadow-[#a7dda1]/40"
-                >
+                <button className="cursor-pointer mt-auto w-full bg-[#a7dda1] hover:bg-[#8bc786] text-slate-900 font-medium py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg shadow-[#a7dda1]/20 hover:shadow-[#a7dda1]/40">
                   Book Now
                 </button>
               </div>
