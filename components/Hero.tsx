@@ -77,7 +77,7 @@ export default function Hero() {
                 <FiUsers className="text-2xl text-[#a7dda1]" />
               </div>
               <div className="text-left">
-                <p className="text-2xl font-bold text-white">50,000+</p>
+                <p className="text-2xl font-bold text-white">5,000+</p>
                 <p className="text-slate-400">Happy Travelers</p>
               </div>
             </div>
