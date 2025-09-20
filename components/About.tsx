@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
         <div>
-          <img
+          <Image
             src="/about.jpg"
             alt="Yati Kitchen"
-            className="rounded-2xl shadow-lg"
+            width={800}
+            height={560}
+            className="rounded-2xl shadow-lg object-cover"
           />
         </div>
         <div className="flex flex-col justify-center">

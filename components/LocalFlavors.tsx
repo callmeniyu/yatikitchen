@@ -132,8 +132,8 @@ export default function LocalFlavors() {
             </h3>
             <p className="text-slate-300 mb-6">
               Every dish is prepared with ingredients sourced directly from
-              Cameron Highlands' organic farms, ensuring maximum freshness and
-              authentic flavors in every bite.
+              Cameron Highlands&apos; organic farms, ensuring maximum freshness
+              and authentic flavors in every bite.
             </p>
             <div className="flex items-center justify-center space-x-8 text-sm text-slate-400">
               <div className="flex items-center">

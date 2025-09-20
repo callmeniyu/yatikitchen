@@ -27,10 +27,7 @@
   /* class names cannot contain a leading number or dots; use a hyphen instead */
   .size-0-5 { width: 0.125rem; height: 0.125rem; }
 
-  /* Meteor and aurora animation helpers — use CSS vars if defined */
-  .animate-meteor {
-    animation: var(--animate-meteor, meteor 5s linear infinite);
-  }
+
 
   .animate-aurora {
     animation: var(--animate-aurora, aurora 8s ease-in-out infinite alternate);
@@ -75,59 +72,8 @@ html {
   }
   .dark { --background: 0 0% 3.9%; --foreground: 0 0% 98%; --card: 0 0% 3.9%; --card-foreground: 0 0% 98%; --popover: 0 0% 3.9%; --popover-foreground: 0 0% 98%; --primary: 0 0% 98%; --primary-foreground: 0 0% 9%; --secondary: 0 0% 14.9%; --secondary-foreground: 0 0% 98%; --muted: 0 0% 14.9%; --muted-foreground: 0 0% 63.9%; --accent: 0 0% 14.9%; --accent-foreground: 0 0% 98%; --destructive: 0 62.8% 30.6%; --destructive-foreground: 0 0% 98%; --border: 0 0% 14.9%; --input: 0 0% 14.9%; --ring: 0 0% 83.1%; --chart-1: 220 70% 50%; --chart-2: 160 60% 45%; --chart-3: 30 80% 55%; --chart-4: 280 65% 60%; --chart-5: 340 75% 55%;
   }
-  .theme { --animate-meteor: meteor 5s linear infinite; --animate-aurora: aurora 8s ease-in-out infinite alternate;
-  }
+
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* Meteor and aurora animations: defined at top level so PostCSS/Tailwind recognize them */
-@keyframes meteor {
-  0% {
-    transform: rotate(var(--angle)) translateX(0);
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(var(--angle)) translateX(-500px);
-    opacity: 0;
-  }
-}
-
-@keyframes aurora {
-  0% {
-    background-position: 0% 50%;
-    transform: rotate(-5deg) scale(0.9);
-  }
-  25% {
-    background-position: 50% 100%;
-    transform: rotate(5deg) scale(1.1);
-  }
-  50% {
-    background-position: 100% 50%;
-    transform: rotate(-3deg) scale(0.95);
-  }
-  75% {
-    background-position: 50% 0%;
-    transform: rotate(3deg) scale(1.05);
-  }
-  100% {
-    background-position: 0% 50%;
-    transform: rotate(-5deg) scale(0.9);
-  }
-}
-
-/* Expose animation shorthands globally so components using CSS vars can rely on them */
-:root {
-  --animate-meteor: meteor 5s linear infinite;
-  --animate-aurora: aurora 8s ease-in-out infinite alternate;
 }

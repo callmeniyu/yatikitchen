@@ -2,7 +2,7 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { FiCheck, FiClock, FiMapPin, FiCoffee, FiHome } from "react-icons/fi";
+import { FiCheck, FiMapPin, FiCoffee, FiHome } from "react-icons/fi";
 
 export default function Packages() {
   const ref = useRef(null);
@@ -113,6 +113,21 @@ export default function Packages() {
                     <FiCoffee className="mr-2 text-[#a7dda1]" /> Meals Included
                   </h4>
                   <p className="text-slate-300">{pkg.highlights[3]}</p>
+                </div>
+
+                <div className="mb-4 text-slate-300">
+                  <div>
+                    <span className="font-medium text-white mr-2">
+                      Check-In:
+                    </span>
+                    <span>{checkIn}</span>
+                  </div>
+                  <div>
+                    <span className="font-medium text-white mr-2">
+                      Check-Out:
+                    </span>
+                    <span>{checkOut}</span>
+                  </div>
                 </div>
 
                 <button className="mt-auto w-full bg-[#a7dda1] hover:bg-[#8bc786] text-slate-900 font-medium py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg shadow-[#a7dda1]/20 hover:shadow-[#a7dda1]/40">

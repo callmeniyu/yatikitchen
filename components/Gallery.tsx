@@ -131,11 +131,13 @@ export default function Gallery() {
                 } ${index === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
                 onClick={() => openModal(actualIndex)}
               >
-                <div className="aspect-square">
-                  <img
+                <div className="relative aspect-square">
+                  <Image
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 pointer-events-none"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110 pointer-events-none"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
@@ -205,11 +207,15 @@ export default function Gallery() {
             </button>
 
             {/* Image */}
-            <img
-              src={galleryImages[selectedImage].src}
-              alt={galleryImages[selectedImage].alt}
-              className="w-full h-auto max-h-[70vh] object-contain"
-            />
+            <div className="w-full max-h-[70vh] flex items-center justify-center">
+              <Image
+                src={galleryImages[selectedImage].src}
+                alt={galleryImages[selectedImage].alt}
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain"
+              />
+            </div>
 
             {/* Image info */}
             <div className="p-6 border-t border-slate-700">

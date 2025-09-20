@@ -2,7 +2,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { FiArrowDown, FiUsers, FiStar } from "react-icons/fi";
-import { AuroraText } from "@/components/ui/aurora-text";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {

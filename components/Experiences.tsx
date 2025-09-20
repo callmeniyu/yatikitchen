@@ -2,7 +2,7 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { FiCoffee, FiHome, FiMap, FiPackage } from "react-icons/fi";
+import { FiCoffee, FiHome, FiPackage } from "react-icons/fi";
 
 export default function Experiences() {
   const ref = useRef(null);
