@@ -104,7 +104,8 @@ export default function Packages() {
 
                 <div className="mb-6">
                   <h4 className="font-semibold text-white flex items-center mb-3">
-                    <FiMapPin className="mr-2 text-[#a7dda1]" /> Tour Highlights
+                    <FiMapPin className="mr-2 text-[#a7dda1]" />
+                    Highlights
                   </h4>
                   <ul className="text-slate-300 space-y-2">
                     {pkg.highlights.slice(1, 3).map((item, i) => (
